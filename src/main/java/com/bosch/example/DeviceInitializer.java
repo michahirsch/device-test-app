@@ -1,6 +1,3 @@
-/**
- * Copyright (c) 2011-2015 Bosch Software Innovations GmbH, Germany. All rights reserved.
- */
 package com.bosch.example;
 
 import java.time.LocalDateTime;
