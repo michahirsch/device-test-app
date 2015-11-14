@@ -64,6 +64,16 @@ public class Device {
         return createdAt;
     }
 
+    /*
+     * (non-Javadoc)
+     * 
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+        return "Device [id=" + id + ", createdAt=" + createdAt + "]";
+    }
+
     /**
      * 
      * @author Michael Hirsch

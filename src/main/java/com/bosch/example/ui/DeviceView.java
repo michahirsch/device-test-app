@@ -39,10 +39,9 @@ public class DeviceView extends VerticalLayout implements View {
     @Override
     public void enter(final ViewChangeEvent event) {
         final List<Device> devices = deviceManagement.getDevices(DeviceFilter.emptyFilter());
-
         // TODO: do it better ;)
         devices.forEach(device -> {
-            addComponent(new Label("Device : " + device.getId() + "  --- "
+            addComponent(new Label(device + "  --- "
                     + deviceManagement.getTags(DeviceTagFilter.emptyFilter().device(device.getId()))));
         });
     }
