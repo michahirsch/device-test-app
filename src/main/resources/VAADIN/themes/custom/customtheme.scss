@@ -1,0 +1,12 @@
+
+@import '../valo/valo';
+
+
+
+@mixin customtheme {
+  @include valo;
+  
+  .test-Label{
+  	font-size: $v-font-size--small !important;
+  }
+}

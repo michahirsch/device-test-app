@@ -16,7 +16,7 @@ import com.vaadin.ui.VerticalLayout;
  *
  */
 @SpringUI
-@Theme("valo")
+@Theme("custom")
 public class DeviceUI extends UI {
 
     private static final long serialVersionUID = 1L;

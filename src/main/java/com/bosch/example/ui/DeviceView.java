@@ -38,8 +38,14 @@ public class DeviceView extends VerticalLayout implements View {
         final List<Device> devices = deviceManagement.getDevices(DeviceFilter.emptyFilter());
         // TODO: do it better ;)
         devices.forEach(device -> {
-            addComponent(new Label(device + "  --- "
-                    + deviceManagement.getTags(DeviceTagFilter.emptyFilter().device(device.getId()))));
+            addDeviceDetails(device);
         });
+    }
+
+    private void addDeviceDetails(final Device device) {
+        final Label deviceLbl = new Label(device + "  --- "
+                + deviceManagement.getTags(DeviceTagFilter.emptyFilter().device(device.getId())));
+        deviceLbl.addStyleName("test-Label");
+        addComponent(deviceLbl);
     }
 }
